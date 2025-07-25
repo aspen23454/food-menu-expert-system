@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Menu Expert System - Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
+    }
+    h1, h2 {
+      color: #007BFF;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f8ff;
+    }
+    code {
+      background: #f5f5f5;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍽️ Food Menu Expert System</h1>
+
+  <h2>✅ Overview</h2>
+  <p>
+    This expert system is a <strong>smart food menu ordering assistant</strong> built using HTML5, CSS, and JavaScript. It recommends meals based on the user's preferences such as meal time, dietary needs, spice level, and budget. It mimics decision-making similar to a human expert using a rule-based approach.
+  </p>
+
+  <h2>🎯 Purpose</h2>
+  <p>
+    The system helps users—especially those unfamiliar with a menu—select meals that suit their preferences:
+  </p>
+  <ul>
+    <li>Meal Time (Breakfast, Lunch, Dinner)</li>
+    <li>Dietary Type (Vegan, Non
+
+Great! Here's a full **HTML5 + CSS3 version** of the write-up — designed to be included in a webpage, documentation site, or as a descriptive landing page for your expert system project:
+
+---
+
+### ✅ Full HTML5 + CSS3 Write-Up for Your Expert System
+
+You can save this as something like `about.html` or include it inside your GitHub Pages project:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Menu Expert System - Overview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #007BFF;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eaf4ff;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      table, th, td {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ Food Menu Expert System</h1>
+
+    <h2>✅ Overview</h2>
+    <p>
+      This expert system is a smart food menu ordering assistant designed using HTML5, CSS3, and vanilla JavaScript.
+      It helps users make personalized meal selections by simulating expert-level decision logic.
+    </p>
+
+    <h2>🎯 Purpose</h2>
+    <p>The goal of this system is to assist users in choosing a meal that suits their:</p>
+    <ul>
+      <li>Meal Type (Breakfast, Lunch, Dinner)</li>
+      <li>Dietary Preference (Vegan, Non-Vegan)</li>
+      <li>Cuisine (African or Continental)</li>
+      <li>Spice Level (Mild or Spicy)</li>
+      <li>Budget (₦1000 – ₦3000+)</li>
+    </ul>
+
+    <h2>🧠 How It Works</h2>
+    <p>
+      The system uses a series of conditional rules (IF-THEN) to navigate user input through decision nodes.
+      Based on user answers, it suggests the most fitting meal.
+    </p>
+
+    <h2>📱 Features</h2>
+    <ul>
+      <li>Responsive for mobile and desktop</li>
+      <li>One-file HTML (easy to share or host)</li>
+      <li>No backend or server needed</li>
+      <li>Runs offline in any modern browser</li>
+    </ul>
+
+    <h2>📊 Sample Recommendations</h2>
+    <table>
+      <tr>
+        <th>Meal</th>
+        <th>Diet</th>
+        <th>Recommendation</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Breakfast</td>
+        <td>Vegan</td>
+        <td>Pap & Moi Moi</td>
+        <td>₦1500</td>
+      </tr>
+      <tr>
+        <td>Lunch</td>
+        <td>Non-Vegan</td>
+        <td>Jollof Rice with Chicken</td>
+        <td>₦2500</td>
+      </tr>
+      <tr>
+        <td>Dinner</td>
+        <td>Vegan</td>
+        <td>Yam Porridge (Vegan)</td>
+        <td>₦3000</td>
+      </tr>
+      <tr>
+        <td>Dinner</td>
+        <td>Non-Vegan</td>
+        <td>Grilled Fish & Boiled Yam</td>
+        <td>₦3500</td>
+      </tr>
+    </table>
+
+    <h2>🛠️ Technologies Used</h2>
+    <ul>
+      <li><strong>HTML5</strong> – for structure and layout</li>
+      <li><strong>CSS3</strong> – for responsive design and styling</li>
+      <li><strong>JavaScript</strong> – for rule-based decision logic</li>
+    </ul>
+
+    <h2>📄 File</h2>
+    <p><code>food_menu_expert_system_expanded.html</code></p>
+
+    <h2>💻 Hosting</h2>
+    <p>
+      To make this live, upload the HTML file to GitHub and enable GitHub Pages in your repository settings.
+    </p>
+  </div>
+</body>
+</html>
