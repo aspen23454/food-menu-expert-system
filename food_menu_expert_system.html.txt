@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Menu Expert System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 50px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .section {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="start" class="section active">
+    <h1>Welcome to Smart Food Menu Recommender</h1>
+    <p>This expert system helps you find the perfect meal based on your preferences.</p>
+    <button onclick="showSection('q1')">Start Now</button>
+  </div>
+
+  <div id="q1" class="section">
+    <h2>What meal are you looking for?</h2>
+    <button onclick="showSection('q2')">Lunch</button>
+  </div>
+
+  <div id="q2" class="section">
+    <h2>Do you have any dietary restrictions?</h2>
+    <button onclick="showSection('q3')">Vegan</button>
+  </div>
+
+  <div id="q3" class="section">
+    <h2>What cuisine do you prefer?</h2>
+    <button onclick="showSection('q4')">African</button>
+  </div>
+
+  <div id="q4" class="section">
+    <h2>How spicy do you want your food?</h2>
+    <button onclick="showSection('q5')">Spicy</button>
+  </div>
+
+  <div id="q5" class="section">
+    <h2>Choose your budget range:</h2>
+    <button onclick="showSection('result1')">₦1000 – ₦2000</button>
+    <button onclick="showSection('result2')">₦2000 – ₦3000</button>
+    <button onclick="showSection('result3')">₦3000 and above</button>
+  </div>
+
+  <div id="result1" class="section">
+    <h2>Your Meal Suggestion:</h2>
+    <h3>Spicy Beans & Plantain (Vegan)</h3>
+    <p>Price: ₦2000</p>
+    <p>A healthy, filling, and 100% plant-based lunch option. Rich in flavor and fiber.</p>
+    <button onclick="showSection('start')">Start Over</button>
+  </div>
+
+  <div id="result2" class="section">
+    <h2>Your Meal Suggestion:</h2>
+    <h3>Spicy Vegan Jollof Rice with Mushrooms</h3>
+    <p>Price: ₦2500</p>
+    <p>Delicious Nigerian-style jollof rice made completely plant-based with a spicy kick.</p>
+    <button onclick="showSection('start')">Start Over</button>
+  </div>
+
+  <div id="result3" class="section">
+    <h2>Your Meal Suggestion:</h2>
+    <h3>Vegan Yam Porridge</h3>
+    <p>Price: ₦3500</p>
+    <p>A hearty dish of soft yam, palm oil, vegetables, and spices. Completely vegan and satisfying.</p>
+    <button onclick="showSection('start')">Start Over</button>
+  </div>
+
+  <script>
+    function showSection(id) {
+      var sections = document.querySelectorAll('.section');
+      sections.forEach(function(section) {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
